@@ -4,11 +4,7 @@ GET http://localhost:3003/users
 
 # Retorna todos os produtos
 ###
-GET http://localhost:3003/products?search=pera
-
-# Retorna as compras de um usuario
-###
-GET http://localhost:3003/users/92432666-cb2a-4957-995f-c675d92db2c5/purchases
+GET http://localhost:3003/products
 
 # Cadastra novo usuario
 ###
@@ -27,9 +23,9 @@ POST http://localhost:3003/products
 Content-Type: application/json
 
 {
-    "name": "iPera 12",
-    "price": 10000,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTKG0AMROn_9kTgWyUCaysl8vklLL63r471_xHNID1wk33f9hoWKua9_A2iFoCQXspofAvzQsxnAFY&usqp=CAc"
+    "name": "manteiga arabica",
+    "price": 100,
+    "imageUrl": "teste3"
 }
 
 # Faz uma compra para o usuario
@@ -38,7 +34,7 @@ POST http://localhost:3003/purchase
 Content-Type: application/json
 
 {
-    "userId": "92432666-cb2a-4957-995f-c675d92db2c5",
-    "productId": "78e04429-2a83-49a9-ad7d-ea83a2229bb8",
-    "quantity": 1
+    "userId": "75b07484-e543-4b99-9b0f-10c0f5c32142",
+    "productId": "9bcf03aa-68e9-4c44-ab8e-0ad4d169d108",
+    "quantity": 4
 }

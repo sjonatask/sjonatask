@@ -1,10 +1,18 @@
 import { UserDataBase } from "../data/UserDataBase"
 import { User } from "../model/type"
+import addUserPurchase from "../services/addUserPurchase"
 import { generateId } from "../services/GenerateID"
 import { PurchaseBussines } from "./PurchaseBussines"
 
 
 export class UserBussines {
+
+    async find(): Promise<any> {
+        const userDB = new UserDataBase()
+
+        let result = await userDB.find().then(addUserPurchase)
+        return result
+    }
 
     async create(name: string, password: string, email: string): Promise<void> {
         let errorCode = 400
@@ -37,13 +45,5 @@ export class UserBussines {
         })
 
         userDB.create(id, name, password, email)
-    }
-
-    async find(): Promise<any> {
-        const userDB = new UserDataBase()
-        const purchase = new PurchaseBussines()
-
-        let result = await userDB.find().then(purchase.insertUserPurchase)
-        return result
     }
 }

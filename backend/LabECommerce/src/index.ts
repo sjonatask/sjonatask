@@ -1,19 +1,18 @@
 import { app } from "./app";
-import { getProducts } from "./endpoints/getProducts";
-import { getUsers } from "./endpoints/getUsers";
-import { getUsersPurchase } from "./endpoints/getUsersPurchase";
-import { postProducts } from "./endpoints/postProducts";
-import { postPurchase } from "./endpoints/postPurchase";
-import { postUsers } from "./endpoints/postUsers";
+import { ProductController } from "./controller/ProductController";
+import { PurchaseController } from "./controller/PurchaseController";
+import { UserController } from "./controller/UserController";
 
-app.get("/users", getUsers)
+const userController = new UserController()
+const productController = new ProductController()
+const purchaseController = new PurchaseController()
 
-app.get("/products", getProducts)
+app.get("/users", userController.find)
 
-app.get("/users/:user_id/purchases", getUsersPurchase)
+app.get("/products", productController.findProduct)
 
-app.post("/users", postUsers)
+app.post("/users", userController.create)
 
-app.post("/products", postProducts)
+app.post("/products", productController.create)
 
-app.post("/purchase", postPurchase)
+app.post("/purchase", purchaseController.insert)

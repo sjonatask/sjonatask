@@ -1,9 +1,10 @@
-import { DataBase } from "./dataBase"
+import { Product } from "../model/type"
+import { DataBase } from "./DataBase"
 
 export class ProductDataBase extends DataBase{
     private static TABLE_NAME = "labecommerce_products"
 
-    async find(order?: string, search?:string):Promise<any> {
+    async find(order?: string, search?:string):Promise<Product[]> {
         let result
         if(!order && !search){
             result = await ProductDataBase.connection(ProductDataBase.TABLE_NAME) 
