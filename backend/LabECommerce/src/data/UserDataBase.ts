@@ -1,5 +1,5 @@
 import { User } from "../model/type"
-import { DataBase } from "./dataBase"
+import { DataBase } from "./DataBase"
 
 export class UserDataBase extends DataBase{
     private static TABLE_NAME = "labecommerce_users"

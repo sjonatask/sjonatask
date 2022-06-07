@@ -6,7 +6,7 @@ export class UserController{
     async find (req:Request, res:Response):Promise<any>{
         try {
 
-            const userBussines= new UserBussines().find()
+            const userBussines = await new UserBussines().find()
 
             res.status(200).send(userBussines)
         } catch (error:any) {
