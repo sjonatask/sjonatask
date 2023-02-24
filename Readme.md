@@ -1,5 +1,5 @@
 ### Olá, Sou o Jonathan👋  
-Estou na reta final do bootcamp da labenu e estou em busca de colocar tudo que aprendi / aprendendo em pratica, afinal se atualizar das tecnologias e aprender as novas nunca para.
+Completei do bootcamp da labenu e estou em busca de colocar tudo que aprendi / aprendendo em pratica, afinal se atualizar das tecnologias e aprender as novas nunca para.
 
 Caso queira entrar em contato ou aumentar mais a rede.
 
