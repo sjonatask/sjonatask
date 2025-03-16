@@ -1,7 +1,4 @@
 ### Olá, Sou o Jonathan👋  
-Completei do bootcamp da labenu e estou em busca de colocar tudo que aprendi / aprendendo em pratica, afinal se atualizar das tecnologias e aprender as novas nunca para.
-
-Caso queira entrar em contato ou aumentar mais a rede.
 
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/jonathan-andrade-b5b7a1189/) 
 
